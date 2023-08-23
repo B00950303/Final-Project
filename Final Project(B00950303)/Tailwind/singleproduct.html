@@ -1,228 +1,194 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>tailwind</title>
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <!-- fontawesome css -->
-    <link rel="stylesheet" href="css/all.min.css">
-    <!-- Tailwind CSS -->
-    <link href="./path/to/tailwind.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.15/tailwind.min.css">
-    <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
-  />
-  <script
-  defer
-  src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"
-></script>
-    <!-- custom css -->
-    <link rel="stylesheet" href="css/style.css">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>tailwind</title>
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <!-- fontawesome css -->
+  <link rel="stylesheet" href="css/all.min.css">
+  <!-- Tailwind CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.15/tailwind.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+  <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+  <!-- css -->
+  <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
-    <!-- header section -->
-    <header id="header" class="header">
-      <!-- navbar -->
-      <nav class="bg-white shadow-lg">
-        <div class="container mx-auto flex items-center justify-between py-4 px-8">
-          <!-- Brand/logo -->
-          <a href="index.html" class="navbar-brand logo">
-            <img src="img/logo.png" alt="company logo" />
-          </a>
-      
-          <!-- Mobile navigation toggler -->
-          <button
-            class="lg:hidden block text-gray-600 hover:text-black focus:outline-none"
-            id="nav-toggler"
-          >
-            <i class="fas fa-bars"></i>
-          </button>
-      
-          <!-- Desktop navigation menu (hidden on small screens) -->
-          <div class="hidden lg:flex space-x-4" id="myNavbar">
-            <ul class="navbar-nav mx-auto flex">
-              <li class="nav-item mx-2">
-                <a href="index.html" class="nav-link">Home</a>
-              </li>
-              <li class="nav-item mx-2">
-                <a href="products.html" class="nav-link">Products</a>
-              </li>
-              <li class="nav-item mx-2">
-                <a href="singleproduct.html" class="nav-link">Single Product</a>
-              </li>
-              <li class="nav-item mx-2">
-                <a href="store.html" class="nav-link">Store</a>
-              </li>
-            </ul>
-          </div>
-      
-          <!-- Icons (shown on large screens only) -->
-          <div class="hidden lg:flex space-x-4">
-            <!-- Single icon -->
-            <div class="navbar-icon mx-2 text-gray-600 hover:text-black">
-              <i class="fas fa-search"></i>
-            </div>
-            <!-- End of single icon -->
-      
-            <!-- Single icon with cart items -->
-            <a href="store.html" class="navbar-icon mx-2 relative text-gray-600 hover:text-black">
-              <i class="fas fa-shopping-cart"></i>
-              <div class="cart-items absolute -top-1 -right-2 w-4 h-4 bg-red-500 text-white text-center rounded-full">
-                2
-              </div>
-            </a>
-            <!-- End of single icon -->
-          </div>
+  <!-- header section -->
+  <header id="header" class="header">
+    <!-- navbar -->
+    <nav class="bg-white shadow-lg">
+      <div class="container mx-auto flex items-center justify-between py-4 px-8">
+        <a href="index.html" class="navbar-brand logo">
+          <img src="img/logo.png" alt="company logo" />
+        </a>
+        <button class="lg:hidden block text-gray-600 hover:text-black focus:outline-none" id="nav-toggler">
+          <i class="fas fa-bars"></i>
+        </button>
+        <div class="hidden lg:flex space-x-4" id="myNavbar">
+          <ul class="navbar-nav mx-auto flex">
+            <li class="nav-item mx-2">
+              <a href="index.html" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item mx-2">
+              <a href="products.html" class="nav-link">Products</a>
+            </li>
+            <li class="nav-item mx-2">
+              <a href="singleproduct.html" class="nav-link">Single Product</a>
+            </li>
+            <li class="nav-item mx-2">
+              <a href="store.html" class="nav-link">Store</a>
+            </li>
+          </ul>
         </div>
-      </nav>
-      <!-- end of navbar -->
-      <div class="banner-product flex pl-3 lg:pl-5 items-center text-center justify-center">
-        <div>
-          <h1 class="text-slant text-uppercase font-semibold mb-0 text-yellow">
-            Nike Air
-          </h1>
-          <h1 class="text-lowercase font-bold">
-            our products
-          </h1>
+        <div class="hidden lg:flex space-x-4">
+          <!-- Single icon -->
+          <div class="navbar-icon mx-2 text-gray-600 hover:text-black">
+            <i class="fas fa-search"></i>
+          </div>
+          <a href="store.html" class="navbar-icon mx-2 relative text-gray-600 hover:text-black">
+            <i class="fas fa-shopping-cart"></i>
+            <div class="cart-items absolute -top-1 -right-2 w-4 h-4 bg-red-500 text-white text-center rounded-full">
+              2
+            </div>
+          </a>
         </div>
       </div>
-    </header>
-    <!-- end of header section -->
+    </nav>
+    <!-- end of navbar -->
+    <div class="banner-product flex pl-3 lg:pl-5 items-center text-center justify-center">
+      <div>
+        <h1 class="text-slant text-uppercase font-semibold mb-0 text-yellow">
+          Nike Air
+        </h1>
+        <h1 class="text-lowercase font-bold">
+          our products
+        </h1>
+      </div>
+    </div>
+  </header>
+  <!-- end of header section -->
 
-    <!-- single product -->
-    <section class="single-product py-5">
-      <div class="container mx-auto px-4 lg:max-w-5xl">
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-          <div class="col-span-1 md:col-span-1 lg:col-span-1 my-5 text-center">
-            <div class="single-product-img-container">
+  <!-- single product -->
+  <section class="single-product py-5">
+    <div class="container mx-auto px-4 lg:max-w-5xl">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <div class="col-span-1 md:col-span-1 lg:col-span-1 my-5 text-center">
+          <div class="single-product-img-container">
+            <img src="img/img-products/product-1.png" alt="" class="img-fluid">
+          </div>
+          <div class="grid grid-cols-6 gap-1 mt-3">
+            <div class="col-span-1">
               <img src="img/img-products/product-1.png" alt="" class="img-fluid">
             </div>
-            <div class="grid grid-cols-6 gap-1 mt-3">
-              <!-- single photo -->
-              <div class="col-span-1">
-                <img src="img/img-products/product-1.png" alt="" class="img-fluid">
-              </div>
-              <!-- end of single photo -->
-              <!-- Repeat the rest of the single photo elements with the corresponding Tailwind CSS classes -->
-            </div>
           </div>
-          <!-- info -->
-          <div class="col-span-1 md:col-span-1 lg:col-span-1 my-5 px-5 md:px-0 single-product-info">
-            <!-- ratings -->
-            <div class="flex items-center mb-2">
-              <span class="text-yellow-500">
-                <i class="fas fa-star"></i>
-              </span>
-              <span class="text-yellow-500">
-                <i class="fas fa-star"></i>
-              </span>
-              <span class="text-yellow-500">
-                <i class="fas fa-star"></i>
-              </span>
-              <span class="text-yellow-500">
-                <i class="fas fa-star"></i>
-              </span>
-              <span class="text-gray-400">
-                <i class="far fa-star"></i>
-              </span>
-              <span class="text-sm ml-2">
-                (25 Customer Reviews)
-              </span>
+        </div>
+        <div class="col-span-1 md:col-span-1 lg:col-span-1 my-5 px-5 md:px-0 single-product-info">
+          <div class="flex items-center mb-2">
+            <span class="text-yellow-500">
+              <i class="fas fa-star"></i>
+            </span>
+            <span class="text-yellow-500">
+              <i class="fas fa-star"></i>
+            </span>
+            <span class="text-yellow-500">
+              <i class="fas fa-star"></i>
+            </span>
+            <span class="text-yellow-500">
+              <i class="fas fa-star"></i>
+            </span>
+            <span class="text-gray-400">
+              <i class="far fa-star"></i>
+            </span>
+            <span class="text-sm ml-2">
+              (25 Customer Reviews)
+            </span>
+          </div>
+          <h2 class="text-uppercase my-2">
+            Nike AIR Max
+          </h2>
+          <h2 class="text-uppercase my-2">
+            $10.00 - $200.00
+          </h2>
+          <p class="text-gray-500 leading-relaxed">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, quae!
+          </p>
+          <h5 class="text-uppercase mt-4">
+            colors:
+            <span class="inline-block w-4 h-4 products-color products-color-black mx-2"></span>
+            <span class="inline-block w-4 h-4 products-color products-color-blue mx-2"></span>
+            <span class="inline-block w-4 h-4 products-color products-color-green mx-2"></span>
+          </h5>
+          <h5 class="text-uppercase mt-2">
+            SIZES : XS S M L XL
+          </h5>
+          <div class="flex mt-2">
+            <button class="btn btn-black mx-1">-</button>
+            <button class="btn btn-black mx-1">4</button>
+            <button class="btn btn-black mx-1">+</button>
+          </div>
+          <button class="btn btn-black mt-2">
+            Wishlist
+          </button>
+          <button class="btn btn-yellow mt-2">
+            Add To Cart
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- end of single product -->
+
+  <!-- single product info -->
+  <section class="single-product-info">
+    <div class="container  mx-auto px-4 lg:max-w-5xl">
+      <div class="flex flex-wrap">
+        <div class="w-full">
+          <div class="bg-white rounded-lg shadow p-8 bg-gray-200">
+            <div class="flex justify-around my-3">
+              <a href="#" class="product-info-link">
+                <h4 class="text-capitalize">
+                  description
+                </h4>
+              </a>
+              <a href="#" class="product-info-link">
+                <h4 class="text-capitalize">
+                  additional information
+                </h4>
+              </a>
+              <a href="#" class="product-info-link">
+                <h4 class="text-capitalize">
+                  Reviews (25)
+                </h4>
+              </a>
             </div>
-            <!-- end of ratings -->
-            <h2 class="text-uppercase my-2">
-             Nike AIR Max
-            </h2>
-            <h2 class="text-uppercase my-2">
-              $10.00 - $200.00
-            </h2>
-            <p class="text-gray-500 leading-relaxed">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, quae!
+            <p class="text-gray-700 leading-relaxed">
+              Introducing the timeless Classic Sneaker, a fusion of style and comfort.
+              Crafted with premium materials, these sneakers offer a perfect blend of retro charm and modern flair.
             </p>
-            <!-- colors -->
-            <h5 class="text-uppercase mt-4">
-              colors:
-              <span class="inline-block w-4 h-4 products-color products-color-black mx-2"></span>
-              <span class="inline-block w-4 h-4 products-color products-color-blue mx-2"></span>
-              <span class="inline-block w-4 h-4 products-color products-color-green mx-2"></span>
-            </h5>
-            <!-- end of colors -->
-            <!-- size -->
-            <h5 class="text-uppercase mt-2">
-              SIZES : XS S M L XL
-            </h5>
-            <!-- end of size -->
-            <!-- cart buttons -->
-            <div class="flex mt-2">
-              <button class="btn btn-black mx-1">-</button>
-              <button class="btn btn-black mx-1">4</button>
-              <button class="btn btn-black mx-1">+</button>
-            </div>
-            <button class="btn btn-black mt-2">
-              Wishlist
-            </button>
-            <button class="btn btn-yellow mt-2">
-              Add To Cart
-            </button>
-            <!-- end of cart buttons -->
           </div>
         </div>
       </div>
-    </section>
-    <!-- end of single product -->
+    </div>
+  </section>
+  <!-- end of single product info -->
 
-    <!-- single product info -->
-    <section class="single-product-info">
-      <div class="container  mx-auto px-4 lg:max-w-5xl">
-        <div class="flex flex-wrap">
-          <div class="w-full">
-            <div class="bg-white rounded-lg shadow p-8 bg-gray-200">
-              <!-- products info link -->
-              <div class="flex justify-around my-3">
-                <a href="#" class="product-info-link">
-                  <h4 class="text-capitalize">
-                    description
-                  </h4>
-                </a>
-                <a href="#" class="product-info-link">
-                  <h4 class="text-capitalize">
-                    additional information
-                  </h4>
-                </a>
-                <a href="#" class="product-info-link">
-                  <h4 class="text-capitalize">
-                    Reviews (25)
-                  </h4>
-                </a>
-              </div>
-              <!-- end of products info link -->
-              <p class="text-gray-700 leading-relaxed">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestiae voluptatem aperiam culpa, adipisci aspernatur fugiat, animi odio quos assumenda praesentium, doloremque consequuntur vitae repellat eos sapiente laboriosam iusto. Veritatis, enim dolore. Odit, voluptatum doloremque architecto harum at optio quas minima?
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- end of single product info -->
-
-   <!-- featured section -->
-   <section id="featured" class="featured py-5">
+  <!-- featured products -->
+  <section id="featured" class="featured py-5">
     <div class="container mx-auto px-4 lg:max-w-6xl">
       <div class="flex flex-col md:flex-row my-3 items-center justify-center">
         <div class="text-center md:text-left md:w-1/2">
-          <h1 class="text-uppercase">
+          <h1 class="text-uppercase text-center text-4xl">
             featured products
           </h1>
-          <p class="text-muted">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, deleniti?
+          <p class="text-muted text-center">
+            Limited-time offer: Get your kicks today
           </p>
         </div>
       </div>
       <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3  gap-4">
-        <!-- single product -->
         <div class="flex flex-col items-center justify-center">
           <div class="featured-container p-5">
             <img src="img/img-products/product-1.png" alt="" class="w-full h-auto img-fluid">
@@ -239,12 +205,11 @@
             <span>$100</span>
           </h6>
         </div>
-        <!-- end of single product -->
-        <!-- single product -->
         <div class="flex flex-col items-center justify-center">
           <div class="featured-container p-5">
             <img src="img/img-products/product-6.png" alt="" class="w-full h-auto img-fluid">
-            <span class="featured-search-icon cursor-pointer" data-modal-target="defaultModal" data-modal-toggle="defaultModal">
+            <span class="featured-search-icon cursor-pointer" data-modal-target="defaultModal"
+              data-modal-toggle="defaultModal">
               <i class="fas fa-search"></i>
             </span>
             <a href="#" class="featured-store-link text-capitalize mt-2">add to cart</a>
@@ -257,12 +222,11 @@
             <span>$100</span>
           </h6>
         </div>
-        <!-- end of single product -->
-        <!-- single product -->
         <div class="flex flex-col items-center justify-center">
           <div class="featured-container p-5">
             <img src="img/img-products/product-2.png" alt="" class="w-full h-auto img-fluid">
-            <span class="featured-search-icon cursor-pointer" data-modal-target="defaultModal" data-modal-toggle="defaultModal">
+            <span class="featured-search-icon cursor-pointer" data-modal-target="defaultModal"
+              data-modal-toggle="defaultModal">
               <i class="fas fa-search"></i>
             </span>
             <a href="#" class="featured-store-link text-capitalize mt-2">add to cart</a>
@@ -275,12 +239,11 @@
             <span>$100</span>
           </h6>
         </div>
-        <!-- end of single product -->
-        <!-- single product -->
         <div class="flex flex-col items-center justify-center">
           <div class="featured-container p-5">
             <img src="img/img-products/product-3.png" alt="" class="w-full h-auto img-fluid">
-            <span class="featured-search-icon cursor-pointer" data-modal-target="defaultModal" data-modal-toggle="defaultModal">
+            <span class="featured-search-icon cursor-pointer" data-modal-target="defaultModal"
+              data-modal-toggle="defaultModal">
               <i class="fas fa-search"></i>
             </span>
             <a href="#" class="featured-store-link text-capitalize mt-2">add to cart</a>
@@ -293,12 +256,11 @@
             <span>$100</span>
           </h6>
         </div>
-        <!-- end of single product -->
-        <!-- single product -->
         <div class="flex flex-col items-center justify-center">
           <div class="featured-container p-5">
             <img src="img/img-products/product-4.png" alt="" class="w-full h-auto img-fluid">
-            <span class="featured-search-icon cursor-pointer" data-modal-target="defaultModal" data-modal-toggle="defaultModal">
+            <span class="featured-search-icon cursor-pointer" data-modal-target="defaultModal"
+              data-modal-toggle="defaultModal">
               <i class="fas fa-search"></i>
             </span>
             <a href="#" class="featured-store-link text-capitalize mt-2">add to cart</a>
@@ -311,12 +273,11 @@
             <span>$100</span>
           </h6>
         </div>
-        <!-- end of single product -->
-        <!-- single product -->
         <div class="flex flex-col items-center justify-center">
           <div class="featured-container p-5">
             <img src="img/img-products/product-5.png" alt="" class="w-full h-auto img-fluid">
-            <span class="featured-search-icon cursor-pointer" data-modal-target="defaultModal" data-modal-toggle="defaultModal">
+            <span class="featured-search-icon cursor-pointer" data-modal-target="defaultModal"
+              data-modal-toggle="defaultModal">
               <i class="fas fa-search"></i>
             </span>
             <a href="#" class="featured-store-link text-capitalize mt-2">add to cart</a>
@@ -329,57 +290,41 @@
             <span>$100</span>
           </h6>
         </div>
-        <!-- end of single product -->
       </div>
     </div>
   </section>
-  <!-- end of featured section -->
+  <!-- end of featured products -->
 
-  <!-- partners -->
+  <!-- brands -->
   <section class="partners py-5">
     <div class="container mx-auto">
       <div class="flex justify-center">
-        <!-- company carousel -->
         <div class="w-3/4 sm:w-2/4 md:w-2/4 lg:w-1/4 xl:w-1/4 carousel">
-          <div
-            x-data="imageSlider"
-            class="relative mx-auto max-w-2xl overflow-hidden rounded-md bg-gray-100 p-2 sm:p-4"
-          >
-            <div
-            x-cloak
-            x-show="currentIndex === index + 1"
-            x-transition:enter="transition transform duration-300"
-            x-transition:enter-start="opacity-0"
-            x-transition:enter-end="opacity-100"
-            x-transition:leave="transition transform duration-300"
-            x-transition:leave-start="opacity-100"
-            x-transition:leave-end="opacity-0"
-            class="relative h-80"
-            style="width: 30rem"
-            >
+          <div x-data="imageSlider"
+            class="relative mx-auto max-w-2xl overflow-hidden rounded-md bg-gray-100 p-2 sm:p-4">
+            <div x-cloak x-show="currentIndex === index + 1" x-transition:enter="transition transform duration-300"
+              x-transition:enter-start="opacity-0" x-transition:enter-end="opacity-100"
+              x-transition:leave="transition transform duration-300" x-transition:leave-start="opacity-100"
+              x-transition:leave-end="opacity-0" class="relative h-80" style="width: 30rem">
               <img :src="images[currentIndex - 1]" alt="image" class="rounded-sm object-cover w-full h-full" />
             </div>
-            
             <div class="absolute right-5 top-5 z-10 rounded-full bg-gray-600 px-2 text-center text-sm text-white">
               <span x-text="currentIndex"></span>/<span x-text="images.length"></span>
             </div>
-
-            <button
-              @click="previous()"
-              class="absolute left-5 top-1/2 z-10 flex h-11 w-11 -translate-y-1/2 items-center justify-center rounded-full bg-gray-100 shadow-md"
-            >
+            <button @click="previous()"
+              class="absolute left-5 top-1/2 z-10 flex h-11 w-11 -translate-y-1/2 items-center justify-center rounded-full bg-gray-100 shadow-md">
               <i class="fas fa-chevron-left text-2xl font-bold text-gray-500"></i>
             </button>
-
-            <button
-              @click="forward()"
-              class="absolute right-5 top-1/2 z-10 flex h-11 w-11 -translate-y-1/2 items-center justify-center rounded-full bg-gray-100 shadow-md"
-            >
+            <button @click="forward()"
+              class="absolute right-5 top-1/2 z-10 flex h-11 w-11 -translate-y-1/2 items-center justify-center rounded-full bg-gray-100 shadow-md">
               <i class="fas fa-chevron-right text-2xl font-bold text-gray-500"></i>
             </button>
             <div class="relative h-64" style="width: 22rem">
               <template x-for="(image, index) in images">
-                <div x-show="isVisible(index)" x-transition:enter="transition transform duration-300" x-transition:enter-start="opacity-0" x-transition:enter-end="opacity-100" x-transition:leave="transition transform duration-300" x-transition:leave-start="opacity-100" x-transition:leave-end="opacity-0" class="absolute top-0">
+                <div x-show="isVisible(index)" x-transition:enter="transition transform duration-300"
+                  x-transition:enter-start="opacity-0" x-transition:enter-end="opacity-100"
+                  x-transition:leave="transition transform duration-300" x-transition:leave-start="opacity-100"
+                  x-transition:leave-end="opacity-0" class="absolute top-0">
                   <img :src="image" alt="image" class="rounded-sm object-cover w-full h-full" />
                 </div>
               </template>
@@ -389,10 +334,10 @@
       </div>
     </div>
   </section>
-  <!-- end of  partners -->
+  <!-- end of  brands -->
 
-   <!-- skills section -->
-   <section id="skills" class="skills py-5">
+  <!-- Guarantee section -->
+  <section id="skills" class="skills py-5">
     <div class="container mx-auto px-4 lg:max-w-7xl">
       <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
         <div class="col-span-1 flex items-center my-3">
@@ -404,7 +349,7 @@
               free shipping
             </h3>
             <p class="text-capitalize text-gray-400">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odio, obcaecati!
+              Limited-time offer: Get your kicks today
             </p>
           </div>
         </div>
@@ -417,7 +362,7 @@
               price promise
             </h3>
             <p class="text-capitalize text-gray-400">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odio, obcaecati!
+              Price Assurance Guarantee: Unmatched Value for Your Sneaker Obsession
             </p>
           </div>
         </div>
@@ -430,7 +375,7 @@
               lifetime warranty
             </h3>
             <p class="text-capitalize text-gray-400">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odio, obcaecati!
+              Your Sneakers Covered with Our Lifetime Warranty
             </p>
           </div>
         </div>
@@ -438,32 +383,32 @@
     </div>
   </section>
   <!-- end of skills section -->
-  
-      <!-- newsletter section -->
-      <section id="newsletter" class="newsletter py-5">
-        <div class="container mx-auto px-4 lg:max-w-4xl">
-          <div class="mx-auto text-center">
-            <h2 class="text-uppercase">
-              newsletter
-            </h2>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti blanditiis similique eum, aut culpa maiores cupiditate alias exercitationem error nesciunt.
-            </p>
-            <form action="">
-              <div class="flex items-center mt-5 mb-4">
-                <input type="text" class="text-capitalize w-full py-2 px-4 border border-gray-300 rounded-l-md focus:ring focus:ring-yellow-400 focus:outline-none" placeholder="enter your email">
-                <div class="bg-gray-300 border border-gray-300 px-4 py-2 rounded-r-md">
-                  <i class="fas fa-envelope text-gray-600"></i>
-                </div>
-              </div>
-              <button type="submit" class="btn btn-yellow">subscribe</button>
-            </form>
-          </div>
-        </div>
-      </section>
-      <!-- end of newsletter section -->
 
-  
+  <!-- newsletter section -->
+  <section id="newsletter" class="newsletter py-5">
+    <div class="container mx-auto px-4 lg:max-w-4xl">
+      <div class="mx-auto text-center">
+        <h2 class="text-uppercase">
+          newsletter
+        </h2>
+        <p>
+          Sole Chronicles: Subscribe to Our Newsletter for Exclusive Sneaker Updates!
+        </p>
+        <form action="">
+          <div class="flex items-center mt-5 mb-4">
+            <input type="text"
+              class="text-capitalize w-full py-2 px-4 border border-gray-300 rounded-l-md focus:ring focus:ring-yellow-400 focus:outline-none"
+              placeholder="enter your email">
+            <div class="bg-gray-300 border border-gray-300 px-4 py-2 rounded-r-md">
+              <i class="fas fa-envelope text-gray-600"></i>
+            </div>
+          </div>
+          <button type="submit" class="btn btn-yellow">subscribe</button>
+        </form>
+      </div>
+    </div>
+  </section>
+  <!-- end of newsletter section -->
 
   <!-- footer section -->
   <footer class="footer py-5">
@@ -471,66 +416,47 @@
       <div class="row">
         <div class="col-10 mx-auto text-center">
           <h1 class="text-uppercase font-bold text-yellow inline-block">
-            Furni World
+            Sneak World
           </h1>
-          
-          <!-- footer icons -->
           <div class="flex justify-center my-5">
-            <!-- single icon -->
             <a href="" class="mx-2">
               <div class="fab fa-facebook"></div>
             </a>
-            <!-- end of single icon -->
-            <!-- single icon -->
             <a href="" class="mx-2">
               <div class="fab fa-twitter"></div>
             </a>
-            <!-- end of single icon -->
-            <!-- single icon -->
             <a href="" class="mx-2">
               <div class="fab fa-youtube"></div>
             </a>
-            <!-- end of single icon -->
-            <!-- single icon -->
             <a href="" class="mx-2">
               <div class="fab fa-google-plus"></div>
             </a>
-            <!-- end of single icon -->
-            <!-- single icon -->
             <a href="" class="mx-2">
               <div class="fab fa-instagram"></div>
             </a>
-            <!-- end of single icon -->
           </div>
-          <!-- footer icons -->
           <p class="text-muted capitalize w-3/4 mx-auto text-center">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore illum illo exercitationem ex porro consequuntur quae mollitia qui accusamus! Molestiae.
+            2023 sneak world. All rights reserved.
           </p>
           <div class="flex justify-around mt-5">
-            <!-- single contact -->
             <div class="capitalize">
               <span class="contact-icon mr-2">
                 <i class="fas fa-map"></i>
               </span>
-              123 Main Street, Los Angeles
+              1/1 8 rutherglen street
             </div>
-            <!-- end of single contact -->
-            <!-- single contact -->
             <div class="capitalize">
               <span class="contact-icon mr-2">
                 <i class="fas fa-phone"></i>
               </span>
-              Phone : + (310) 111 2222
+              Phone : + 44 7639476237
             </div>
-            <!-- end of single contact -->
-            <!-- single contact -->
             <div class="capitalize">
               <span class="contact-icon mr-2">
                 <i class="fas fa-envelope"></i>
               </span>
               Email : Eamil@Email.Com
             </div>
-            <!-- end of single contact -->
           </div>
         </div>
       </div>
@@ -544,4 +470,5 @@
   <script src="js/script.js"></script>
   <script src="js/carousel.js"></script>
 </body>
+
 </html>

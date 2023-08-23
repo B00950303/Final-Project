@@ -6,12 +6,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>tailwind</title>
   <!-- Tailwind CSS -->
-
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.15/tailwind.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
   <!-- alpinejs -->
   <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
-  <!-- custom css -->
+  <!--css -->
   <link rel="stylesheet" href="css/style.css">
 
 </head>
@@ -22,17 +21,12 @@
     <!-- navbar -->
     <nav class="bg-white shadow-lg">
       <div class="container mx-auto flex items-center justify-between py-4 px-8">
-        <!-- Brand/logo -->
         <a href="index.html" class="navbar-brand logo">
           <img src="img/logo.png" alt="company logo" />
         </a>
-
-        <!-- Mobile navigation toggler -->
         <button class="lg:hidden block text-gray-600 hover:text-black focus:outline-none" id="nav-toggler">
           <i class="fas fa-bars"></i>
         </button>
-
-        <!-- Desktop navigation menu (hidden on small screens) -->
         <div class="hidden lg:flex space-x-4" id="myNavbar">
           <ul class="navbar-nav mx-auto flex">
             <li class="nav-item mx-2">
@@ -49,23 +43,17 @@
             </li>
           </ul>
         </div>
-
-        <!-- Icons (shown on large screens only) -->
         <div class="hidden lg:flex space-x-4">
           <!-- Single icon -->
           <div class="navbar-icon mx-2 text-gray-600 hover:text-black">
             <i class="fas fa-search"></i>
           </div>
-          <!-- End of single icon -->
-
-          <!-- Single icon with cart items -->
           <a href="store.html" class="navbar-icon mx-2 relative text-gray-600 hover:text-black">
             <i class="fas fa-shopping-cart"></i>
             <div class="cart-items absolute -top-1 -right-2 w-4 h-4 bg-red-500 text-white text-center rounded-full">
               2
             </div>
           </a>
-          <!-- End of single icon -->
         </div>
       </div>
     </nav>
@@ -86,75 +74,23 @@
   </header>
   <!-- end of header section -->
 
-  <!-- services section -->
-  <section id="services" class="services py-5 text-center">
-    <div class="container">
-      <div class="flex flex-wrap justify-center">
-        <!-- single service -->
-        <div class="w-full md:w-1/3 lg:w-1/4 my-3">
-          <span class="service-icon">
-            <i class="fas fa-parachute-box"></i>
-          </span>
-          <h5 class="text-uppercase font-bold">
-            free shipping
-          </h5>
-          <p class="text-muted text-uppercase">
-            free shipping on all order over 100.00
-          </p>
-        </div>
-        <!-- end of single service -->
-        <!-- single service -->
-        <div class="w-full md:w-1/3 lg:w-1/4 my-3">
-          <span class="service-icon">
-            <i class="fas fa-phone-volume"></i>
-          </span>
-          <h5 class="text-uppercase font-bold">
-            ONLINE SUPPORT 24/7
-          </h5>
-          <p class="text-muted text-uppercase">
-            We Will Assist You With Your Inquiries
-          </p>
-        </div>
-        <!-- end of single service -->
-        <!-- single service -->
-        <div class="w-full md:w-1/3 lg:w-1/4 my-3">
-          <span class="service-icon">
-            <i class="fas fa-dollar-sign"></i>
-          </span>
-          <h5 class="text-uppercase font-bold">
-            MONEY BACK GUARANTEE
-          </h5>
-          <p class="text-muted text-uppercase">
-            Free 100% Refund For 30 Days
-          </p>
-        </div>
-        <!-- end of single service -->
-      </div>
-    </div>
-  </section>
-  <!-- end of services section -->
 
   <!-- home categories -->
   <section id="home-categories" class="home-categories py-5">
     <div class="container mx-auto px-4 lg:max-w-7xl">
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
-        <!-- categories title -->
         <div class="col-span-1 md:col-span-2 lg:col-span-1">
           <h5 class="text-uppercase">
             product categories
           </h5>
           <p class="text-muted text-capitalize">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore neque minus in error sunt laudantium totam
-            nemo accusamus iure placeat.
+            Our Passion for Sneakers: Learn About Our Journey in Bringing the Best Footwear to You
           </p>
           <a href="#" class="categorie-link font-semibold text-capitalize">
             view all categories
           </a>
           <div class="categorie-underline"></div>
         </div>
-        <!-- end of categories title -->
-
-        <!-- main categories -->
         <div class="col-span-1 md:col-span-2 lg:col-span-3 grid grid-cols-2 md:grid-cols-4 gap-4 mt-4">
           <!-- single category -->
           <div class="col-span-1 md:col-span-2 lg:col-span-1">
@@ -170,8 +106,6 @@
               </a>
             </div>
           </div>
-          <!-- end of single category -->
-          <!-- single category -->
           <div class="col-span-1 md:col-span-2 lg:col-span-1">
             <div class="category-container">
               <img src="img/cagetogoryImg/sneaker2.jpg" class="img-fluid category-img" alt="">
@@ -185,8 +119,6 @@
               </a>
             </div>
           </div>
-          <!-- end of single category -->
-          <!-- single category -->
           <div class="col-span-1 md:col-span-2 lg:col-span-1">
             <div class="category-container">
               <img src="img/cagetogoryImg/sneaker3.jpg" class="img-fluid category-img" alt="">
@@ -200,8 +132,6 @@
               </a>
             </div>
           </div>
-          <!-- end of single category -->
-          <!-- single category -->
           <div class="col-span-1 md:col-span-2 lg:col-span-1">
             <div class="category-container">
               <img src="img/cagetogoryImg/sneaker4.jpg" class="img-fluid category-img" alt="">
@@ -215,9 +145,7 @@
               </a>
             </div>
           </div>
-          <!-- end of single category -->
         </div>
-        <!-- end of main categories -->
       </div>
     </div>
   </section>
@@ -244,22 +172,65 @@
   </section>
   <!-- end of home filler -->
 
+    <!-- services section -->
+    <section id="services" class="services py-5 text-center">
+      <div class="container">
+        <div class="flex flex-wrap justify-center">
+          <!-- single service -->
+          <div class="w-full md:w-1/3 lg:w-1/4 my-3">
+            <span class="service-icon">
+              <i class="fas fa-parachute-box"></i>
+            </span>
+            <h5 class="text-uppercase font-bold">
+              free shipping
+            </h5>
+            <p class="text-muted text-uppercase">
+              free shipping on all order over 99.00
+            </p>
+          </div>
+          <div class="w-full md:w-1/3 lg:w-1/4 my-3">
+            <span class="service-icon">
+              <i class="fas fa-phone-volume"></i>
+            </span>
+            <h5 class="text-uppercase font-bold">
+              Customer Support
+            </h5>
+            <p class="text-muted text-uppercase">
+              Inquiries Assistance
+            </p>
+          </div>
+          <div class="w-full md:w-1/3 lg:w-1/4 my-3">
+            <span class="service-icon">
+              <i class="fas fa-dollar-sign"></i>
+            </span>
+            <h5 class="text-uppercase font-bold">
+              MONEY BACK GUARANTEE
+            </h5>
+            <p class="text-muted text-uppercase">
+              Free 100% Refund For 30 Days
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end of services section -->
+  
+
 
   <!-- featured section -->
   <section id="featured" class="featured py-5">
     <div class="container mx-auto px-4 lg:max-w-6xl">
       <div class="flex flex-col md:flex-row my-3 items-center justify-center">
         <div class="text-center md:text-left md:w-1/2">
-          <h1 class="text-uppercase">
+          <h1 class="text-uppercase text-center text-4xl">
             featured products
           </h1>
-          <p class="text-muted">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, deleniti?
+          <p class="text-muted text-center">
+            Limited-time offer: Get your kicks today
           </p>
         </div>
       </div>
       <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3  gap-4">
-        <!-- single product -->
         <div class="flex flex-col items-center justify-center">
           <div class="featured-container p-5">
             <img src="img/img-products/product-1.png" alt="" class="w-full h-auto img-fluid">
@@ -276,8 +247,6 @@
             <span>$100</span>
           </h6>
         </div>
-        <!-- end of single product -->
-        <!-- single product -->
         <div class="flex flex-col items-center justify-center">
           <div class="featured-container p-5">
             <img src="img/img-products/product-6.png" alt="" class="w-full h-auto img-fluid">
@@ -295,8 +264,6 @@
             <span>$100</span>
           </h6>
         </div>
-        <!-- end of single product -->
-        <!-- single product -->
         <div class="flex flex-col items-center justify-center">
           <div class="featured-container p-5">
             <img src="img/img-products/product-2.png" alt="" class="w-full h-auto img-fluid">
@@ -314,8 +281,6 @@
             <span>$100</span>
           </h6>
         </div>
-        <!-- end of single product -->
-        <!-- single product -->
         <div class="flex flex-col items-center justify-center">
           <div class="featured-container p-5">
             <img src="img/img-products/product-3.png" alt="" class="w-full h-auto img-fluid">
@@ -333,8 +298,6 @@
             <span>$100</span>
           </h6>
         </div>
-        <!-- end of single product -->
-        <!-- single product -->
         <div class="flex flex-col items-center justify-center">
           <div class="featured-container p-5">
             <img src="img/img-products/product-4.png" alt="" class="w-full h-auto img-fluid">
@@ -352,8 +315,6 @@
             <span>$100</span>
           </h6>
         </div>
-        <!-- end of single product -->
-        <!-- single product -->
         <div class="flex flex-col items-center justify-center">
           <div class="featured-container p-5">
             <img src="img/img-products/product-5.png" alt="" class="w-full h-auto img-fluid">
@@ -371,17 +332,15 @@
             <span>$100</span>
           </h6>
         </div>
-        <!-- end of single product -->
       </div>
     </div>
   </section>
   <!-- end of featured section -->
 
-  <!-- partners -->
+  <!-- Brands -->
   <section class="partners py-5">
     <div class="container mx-auto">
       <div class="flex justify-center">
-        <!-- company carousel -->
         <div class="w-3/4 sm:w-2/4 md:w-2/4 lg:w-1/4 xl:w-1/4 carousel">
           <div x-data="imageSlider"
             class="relative mx-auto max-w-2xl overflow-hidden rounded-md bg-gray-100 p-2 sm:p-4">
@@ -391,16 +350,13 @@
               x-transition:leave-end="opacity-0" class="relative h-80" style="width: 30rem">
               <img :src="images[currentIndex - 1]" alt="image" class="rounded-sm object-cover w-full h-full" />
             </div>
-
             <div class="absolute right-5 top-5 z-10 rounded-full bg-gray-600 px-2 text-center text-sm text-white">
               <span x-text="currentIndex"></span>/<span x-text="images.length"></span>
             </div>
-
             <button @click="previous()"
               class="absolute left-5 top-1/2 z-10 flex h-11 w-11 -translate-y-1/2 items-center justify-center rounded-full bg-gray-100 shadow-md">
               <i class="fas fa-chevron-left text-2xl font-bold text-gray-500"></i>
             </button>
-
             <button @click="forward()"
               class="absolute right-5 top-1/2 z-10 flex h-11 w-11 -translate-y-1/2 items-center justify-center rounded-full bg-gray-100 shadow-md">
               <i class="fas fa-chevron-right text-2xl font-bold text-gray-500"></i>
@@ -422,7 +378,7 @@
   </section>
   <!-- end of  partners -->
 
-  <!-- skills section -->
+  <!-- Guarantee section -->
   <section id="skills" class="skills py-5">
     <div class="container mx-auto px-4 lg:max-w-7xl">
       <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
@@ -435,7 +391,7 @@
               free shipping
             </h3>
             <p class="text-capitalize text-gray-400">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odio, obcaecati!
+              Limited-time offer: Get your kicks today
             </p>
           </div>
         </div>
@@ -448,7 +404,7 @@
               price promise
             </h3>
             <p class="text-capitalize text-gray-400">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odio, obcaecati!
+              Price Assurance Guarantee: Unmatched Value for Your Sneaker Obsession
             </p>
           </div>
         </div>
@@ -461,7 +417,7 @@
               lifetime warranty
             </h3>
             <p class="text-capitalize text-gray-400">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odio, obcaecati!
+              Your Sneakers Covered with Our Lifetime Warranty
             </p>
           </div>
         </div>
@@ -478,8 +434,7 @@
           newsletter
         </h2>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti blanditiis similique eum, aut culpa maiores
-          cupiditate alias exercitationem error nesciunt.
+          Sole Chronicles: Subscribe to Our Newsletter for Exclusive Sneaker Updates!
         </p>
         <form action="">
           <div class="flex items-center mt-5 mb-4">
@@ -497,8 +452,6 @@
   </section>
   <!-- end of newsletter section -->
 
-
-
   <!-- footer section -->
   <footer class="footer py-5">
     <div class="container mx-auto px-4 lg:max-w-4xl">
@@ -507,65 +460,45 @@
           <h1 class="text-uppercase font-bold text-yellow inline-block">
             Sneak World
           </h1>
-
-          <!-- footer icons -->
           <div class="flex justify-center my-5">
-            <!-- single icon -->
             <a href="" class="mx-2">
               <div class="fab fa-facebook"></div>
             </a>
-            <!-- end of single icon -->
-            <!-- single icon -->
             <a href="" class="mx-2">
               <div class="fab fa-twitter"></div>
             </a>
-            <!-- end of single icon -->
-            <!-- single icon -->
             <a href="" class="mx-2">
               <div class="fab fa-youtube"></div>
             </a>
-            <!-- end of single icon -->
-            <!-- single icon -->
             <a href="" class="mx-2">
               <div class="fab fa-google-plus"></div>
             </a>
-            <!-- end of single icon -->
-            <!-- single icon -->
             <a href="" class="mx-2">
               <div class="fab fa-instagram"></div>
             </a>
-            <!-- end of single icon -->
           </div>
-          <!-- footer icons -->
           <p class="text-muted capitalize w-3/4 mx-auto text-center">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore illum illo exercitationem ex porro
-            consequuntur quae mollitia qui accusamus! Molestiae.
+            2023 sneak world. All rights reserved.
           </p>
           <div class="flex justify-around mt-5">
-            <!-- single contact -->
             <div class="capitalize">
               <span class="contact-icon mr-2">
                 <i class="fas fa-map"></i>
               </span>
-              123 Main Street, Los Angeles
+              1/1 8 rutherglen street
             </div>
-            <!-- end of single contact -->
-            <!-- single contact -->
             <div class="capitalize">
               <span class="contact-icon mr-2">
                 <i class="fas fa-phone"></i>
               </span>
-              Phone : + (310) 111 2222
+              Phone : + 44 7639476237
             </div>
-            <!-- end of single contact -->
-            <!-- single contact -->
             <div class="capitalize">
               <span class="contact-icon mr-2">
                 <i class="fas fa-envelope"></i>
               </span>
               Email : Eamil@Email.Com
             </div>
-            <!-- end of single contact -->
           </div>
         </div>
       </div>
@@ -576,7 +509,6 @@
   <script src="js/jquery-3.4.1.min.js"></script>
   <!-- fontwesome js -->
   <script src="js/all.min.js"></script>
-  
   <script src="js/carousel.js"></script>
 </body>
 
